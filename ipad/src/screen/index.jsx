@@ -401,7 +401,7 @@ export default function Home() {
     const canvas = canvasRef.current;
 
     if (canvas) {
-      const response = await axios.post(`http://localhost:8900/calculate`, {
+      const response = await axios.post(`https://ipad-calculator-ai.onrender.com/calculate`, {
         image: canvas.toDataURL("image/png"),
         dict_of_vars: dictOfVars,
       });
